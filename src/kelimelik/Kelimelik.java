@@ -20,7 +20,7 @@ import javax.swing.JButton;
 public class Kelimelik extends javax.swing.JFrame {
     char   harfy=' ';
     String deneme = "";
-    String kelime = "DEASDE";
+    String kelime = "ALSOLUCANA";
     String harf = "";
     int buttonSecmeDizi[][]=new int[16][16];
     JButton[][] btn = new JButton[16][16];

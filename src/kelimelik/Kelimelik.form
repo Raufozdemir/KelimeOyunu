@@ -163,6 +163,9 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Noto Sans" size="14" style="1"/>
             </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Oyun Alan&#x131;"/>
             <Property name="name" type="java.lang.String" value="SBT_LBL_OyunAlani" noResource="true"/>
           </Properties>
@@ -180,6 +183,9 @@
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Noto Sans" size="14" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Kapal&#x131; Alan"/>
             <Property name="name" type="java.lang.String" value="SBT_LBL_KapaliAlan" noResource="true"/>
@@ -199,6 +205,9 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Noto Sans" size="14" style="1"/>
             </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="Kazanma Puan&#x131;"/>
             <Property name="name" type="java.lang.String" value="SBT_LBL_KazanmPuani" noResource="true"/>
           </Properties>
@@ -216,6 +225,9 @@
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Noto Sans" size="14" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Toplam Oyun"/>
             <Property name="name" type="java.lang.String" value="SBT_LBL_TopamOyun" noResource="true"/>
@@ -235,6 +247,9 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Noto Sans" size="14" style="1"/>
             </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="2x Say&#x131;s&#x131;"/>
             <Property name="name" type="java.lang.String" value="SBT_LBL_2xSayisi" noResource="true"/>
           </Properties>
@@ -252,6 +267,9 @@
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Noto Sans" size="14" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
             </Property>
             <Property name="text" type="java.lang.String" value="3x Say&#x131;s&#x131;"/>
             <Property name="name" type="java.lang.String" value="SBT_LBL_3xSayisi" noResource="true"/>
