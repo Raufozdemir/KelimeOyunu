@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package kelimelik;
+package mainClass;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -17,7 +17,7 @@ import javax.swing.JButton;
  *
  * @author ert
  */
-public class Kelimelik extends javax.swing.JFrame {
+public class MainClass extends javax.swing.JFrame {
     char   harfy=' ';
     String deneme = "";
     String kelime = "ELMALAR";
@@ -29,7 +29,7 @@ public class Kelimelik extends javax.swing.JFrame {
      * Creates new form Kelimelik
      */
     
-    public Kelimelik() {
+    public MainClass() {
         initComponents();
         int alan = 10;
         int sariKare=4;
@@ -228,7 +228,6 @@ public class Kelimelik extends javax.swing.JFrame {
         SBT_LBL_OyunBilgileri.setName("SBT_LBL_OyunBilgileri"); // NOI18N
 
         SBT_LBL_OyunAlani.setFont(new java.awt.Font("Noto Sans", 1, 14)); // NOI18N
-        SBT_LBL_OyunAlani.setForeground(new java.awt.Color(0, 0, 0));
         SBT_LBL_OyunAlani.setText("Oyun Alanı");
         SBT_LBL_OyunAlani.setName("SBT_LBL_OyunAlani"); // NOI18N
 
@@ -237,7 +236,6 @@ public class Kelimelik extends javax.swing.JFrame {
         LBL_OyunAlani.setName("LBL_OyunAlani"); // NOI18N
 
         SBT_LBL_KapaliAlan.setFont(new java.awt.Font("Noto Sans", 1, 14)); // NOI18N
-        SBT_LBL_KapaliAlan.setForeground(new java.awt.Color(0, 0, 0));
         SBT_LBL_KapaliAlan.setText("Kapalı Alan");
         SBT_LBL_KapaliAlan.setName("SBT_LBL_KapaliAlan"); // NOI18N
 
@@ -246,7 +244,6 @@ public class Kelimelik extends javax.swing.JFrame {
         LBL_KapaliAlan.setName("LBL_KapaliAlan"); // NOI18N
 
         SBT_LBL_KazanmPuani.setFont(new java.awt.Font("Noto Sans", 1, 14)); // NOI18N
-        SBT_LBL_KazanmPuani.setForeground(new java.awt.Color(0, 0, 0));
         SBT_LBL_KazanmPuani.setText("Kazanma Puanı");
         SBT_LBL_KazanmPuani.setName("SBT_LBL_KazanmPuani"); // NOI18N
 
@@ -255,7 +252,6 @@ public class Kelimelik extends javax.swing.JFrame {
         LBL_KazanmPuani.setName("LBL_KazanmPuani"); // NOI18N
 
         SBT_LBL_TopamOyun.setFont(new java.awt.Font("Noto Sans", 1, 14)); // NOI18N
-        SBT_LBL_TopamOyun.setForeground(new java.awt.Color(0, 0, 0));
         SBT_LBL_TopamOyun.setText("Toplam Oyun");
         SBT_LBL_TopamOyun.setName("SBT_LBL_TopamOyun"); // NOI18N
 
@@ -264,7 +260,6 @@ public class Kelimelik extends javax.swing.JFrame {
         LBL_TopamOyun.setName("LBL_TopamOyun"); // NOI18N
 
         SBT_LBL_2xSayisi.setFont(new java.awt.Font("Noto Sans", 1, 14)); // NOI18N
-        SBT_LBL_2xSayisi.setForeground(new java.awt.Color(0, 0, 0));
         SBT_LBL_2xSayisi.setText("2x Sayısı");
         SBT_LBL_2xSayisi.setName("SBT_LBL_2xSayisi"); // NOI18N
 
@@ -273,7 +268,6 @@ public class Kelimelik extends javax.swing.JFrame {
         LBL_2xSayisi.setName("LBL_2xSayisi"); // NOI18N
 
         SBT_LBL_3xSayisi.setFont(new java.awt.Font("Noto Sans", 1, 14)); // NOI18N
-        SBT_LBL_3xSayisi.setForeground(new java.awt.Color(0, 0, 0));
         SBT_LBL_3xSayisi.setText("3x Sayısı");
         SBT_LBL_3xSayisi.setName("SBT_LBL_3xSayisi"); // NOI18N
 
@@ -485,27 +479,28 @@ public class Kelimelik extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Kelimelik.class
+            java.util.logging.Logger.getLogger(MainClass.class
                     .getName()).log(java.util.logging.Level.SEVERE, null, ex);
 
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Kelimelik.class
+            java.util.logging.Logger.getLogger(MainClass.class
                     .getName()).log(java.util.logging.Level.SEVERE, null, ex);
 
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Kelimelik.class
+            java.util.logging.Logger.getLogger(MainClass.class
                     .getName()).log(java.util.logging.Level.SEVERE, null, ex);
 
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Kelimelik.class
+            java.util.logging.Logger.getLogger(MainClass.class
                     .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Kelimelik().setVisible(true);
+                new MainClass().setVisible(true);
             }
         });
     }
