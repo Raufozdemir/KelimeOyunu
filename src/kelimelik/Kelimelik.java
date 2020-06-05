@@ -22,27 +22,45 @@ public class Kelimelik extends javax.swing.JFrame {
     String deneme = "";
     String kelime = "ALSOLUCANA";
     String harf = "";
-
+    int buttonSecmeDizi[][]=new int[16][16];
     JButton[][] btn = new JButton[16][16];
 
     /**
      * Creates new form Kelimelik
      */
+    
     public Kelimelik() {
         initComponents();
-        //initBTN();
-        initBTN2(10, 4, 2, 7);
+        int alan = 10;
+        int sariKare=4;
+        int kirmiziKare=4;
+        int siyahKare=11;
+        initBTN(alan, sariKare,                 kirmiziKare,siyahKare);
+        
+        
+        kelimeYerlestir();
     }
 
     public static int ver() {
         int sayi = (int) (Math.random() * 9);
         return sayi;
     }
-
-    public void initBTN2(int oyunAlani, int x2kare, int x3kare, int kullanilmaz) {
+    public void kelimeYerlestir()
+    {
         int Aboyut=10;
         int Kboyut=0;
         int Boyut=0;
+        Aboyut=(Aboyut%2)+(Aboyut/2);
+            Kboyut=kelime.length()/2;
+            Boyut=Aboyut-Kboyut;
+            System.out.println(Boyut+" "+Aboyut+" "+Kboyut);
+        for (int i = 0; i < kelime.length(); i++) {
+            btn[Boyut+1+i][5].setText(String.valueOf(kelime.charAt(i)));
+        }
+    }
+    
+    public void initBTN(int oyunAlani, int x2kare, int x3kare, int kullanilmaz) {
+        
         int[] ozelKareAlani = new int[x2kare + x3kare + kullanilmaz];
         //ozel alanlari ayarlamak için 
         for (int i = 0; i < ozelKareAlani.length; i++) {
@@ -90,13 +108,7 @@ public class Kelimelik extends javax.swing.JFrame {
 
             }
         }
-            Aboyut=(Aboyut%2)+(Aboyut/2);
-            Kboyut=kelime.length()/2;
-            Boyut=Aboyut-Kboyut;
-            System.out.println(Boyut+" "+Aboyut+" "+Kboyut);
-        for (int i = 0; i < kelime.length(); i++) {
-            btn[Boyut+1+i][5].setText(String.valueOf(kelime.charAt(i)));
-        }
+            
         
     }
 
@@ -113,21 +125,13 @@ public class Kelimelik extends javax.swing.JFrame {
             btn[x][y].addMouseListener(new MouseListener() {
                 @Override
                 public void mouseClicked(MouseEvent me) {
-                    System.out.println(me.getComponent().getName() + " " + "Tıklandııı");
-                    deneme = me.getComponent().getName();
-                    Color clr = me.getComponent().getBackground();
-                    if (clr == Color.white) {
-                        me.getComponent().setBackground(renk);
-
-                    } else {
-                        me.getComponent().setBackground(Color.white);
-                    }
+                    btnCreate_mouseClickedEvent(me,renk);
 
                 }
 
                 @Override
                 public void mousePressed(MouseEvent me) {
-                    System.out.println("Deneme yapılmak için yazılmıştır");
+                    //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
                 }
 
                 @Override
@@ -149,7 +153,25 @@ public class Kelimelik extends javax.swing.JFrame {
         }
 
     }
+    
+    private void btnCreate_mouseClickedEvent(MouseEvent me,Color renk)
+    {   
+        //Dinamik olarak oluşturulan buttonların tıklama eventleri
+        
+        System.out.println(me.getComponent().getName() + " " + "Tıklandııı");
+        String myStringName = me.getComponent().getName();
+        int myName=Integer.parseInt(myStringName);
+        
+        Color clr = me.getComponent().getBackground();
 
+
+        if (clr == Color.white) {
+            me.getComponent().setBackground(renk);
+
+        } else {
+            me.getComponent().setBackground(Color.white);
+        }
+    }
     //Kontrol bloğunda kullanılan bir kısım
     public static int[] icindeVarmi(int[] dizi, int degisken) {
         int[] snc = new int[2];
